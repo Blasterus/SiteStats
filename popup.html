@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+  <head>
+    <title>SiteStats</title>
+    <script src="popup.js"></script>
+  </head>
+  <body>
+    <h1>SiteStats</h1>
+    <!-- detecting the name of the website(not working) -->
+    <p id="demo2"> </p>
+    <script> document.getElementById("demo2").innerHTML = "Page hostname is:<br>" + window.location.hostname; </script>
+    <!-- detecting the URL of the website(not working) -->
+    <p id="demo"> </p>
+    <script> document.getElementById("demo").innerHTML = "The full URL of this page is:<br>" + window.location.href; </script>
+
+
+    <button id="checkPage">Check this page now!</button>
+
+    <div class="container">
+      <textarea placeholder="Enter your text here..."></textarea>
+      <div class="output row">
+          <div>Characters: <span id="characterCount">0</span></div>
+          <div>Words: <span id="wordCount">0</span></div>
+      </div>
+      <div class="output row">
+          <div>Reading Time: <span id="readingTime">0</span></div>
+          <div id="readability">Show readability score.</div>
+      </div>
+    </ul>
+  </div>
+</div>
+
+  </body>
+</html>
